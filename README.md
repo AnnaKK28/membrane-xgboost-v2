@@ -20,11 +20,11 @@
 
 ## 模型特点
 
-- ✅ 多随机种子重复划分 (8个种子)
-- ✅ 8:2 训练/测试集划分
-- ✅ 5折交叉验证超参数优化
-- ✅ RMSE和R²评价指标
-- ✅ SHAP模型解释
+- 多随机种子重复划分 (8个种子)
+- 8:2 训练/测试集划分
+- 5折交叉验证超参数优化
+- RMSE和R²评价指标
+- SHAP模型解释
 
 ## 安装依赖
 
@@ -38,15 +38,15 @@ pip install xgboost shap pandas numpy scikit-learn matplotlib seaborn
 python train_model.py
 ```
 
-## 输出文件
+## 文件说明
 
-- `dataset/membrane_dataset.csv` - 原始数据集
-- `models/xgboost_membrane_model.json` - 训练好的模型
-- `results/training_results.json` - 训练结果
-- `results/feature_importance.csv` - 特征重要性
+- train_model.py - 主训练脚本
+- generate_data.py - 数据生成脚本
+- dataset/membrane_dataset_sample.csv - 数据集样本(500条)
 
 ## 参考文献
 
 1. Xu et al., J. Membr. Sci. (2006)
 2. Kiso et al., Water Res. (2011)
 3. Yang et al., Chem. Eng. J. (2019)
+
